@@ -1,0 +1,117 @@
+/* intuitivnejší box-sizing */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-top.svg'), hsl(185, 75%, 39%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -420px -460px, 420px 460px;
+    line-height: 1.4;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(0, 0%, 0%);
+    font-size: 18px;
+
+    @media screen and (min-width: 376px) {
+        background-position: -284px -420px, 694px 466px;
+    }
+}
+
+.card {
+    width: 326px;
+    //border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 20px 2px hsla(229, 23%, 23%, 0.3);
+
+    @media screen and (min-width: 376px) {
+        width: 350px;
+    }
+
+    &__header {
+        border-radius: 15px 15px 0 0;
+        background-image: url('../images/bg-pattern-card.svg');
+        background-color: hsl(0, 0%, 100%);
+        height: 140px;
+        position: relative;
+    }
+
+    &__photo {
+        // width: 96px;
+        // height: 96px;
+        border: 4px solid white;
+        border-radius: 50%;
+        position: absolute;
+        top: 88px;
+        left: 113px;
+
+        @media screen and (min-width: 376px) {
+            left: 125px;
+        }
+    }
+
+    &__data {
+        padding: 66px 20px 24px 20px;
+
+        &--name, &--age {
+            margin: 5px; 
+        }
+    
+        &--name {
+            color: hsl(229, 23%, 23%);
+            font-weight: 700;
+        }
+    
+        &--age {
+            color: hsl(0, 0%, 59%);
+        }
+    
+        &--location {
+            font-size: 14px;
+            color: hsl(0, 0%, 59%);
+        }
+    }
+
+    &__statistics {
+        padding: 22px 20px;
+        display: flex;
+        justify-content: space-around;
+        border-top: 2px solid hsl(330, 5%, 91%);
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        &--count {
+            color: hsl(229, 23%, 23%);
+            font-weight: 700;
+        }
+
+        &--title {
+            color: hsl(0, 0%, 59%);
+            font-size: 12px;
+        }
+    }
+}
+
+.flex--row {
+    display: flex;
+    justify-content: center;
+}
+
+.attribution {
+    margin-top: 1.25rem;
+    color: black;
+}
+
+.attribution a {
+    color: white;
+}
