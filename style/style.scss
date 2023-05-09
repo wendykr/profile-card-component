@@ -10,17 +10,17 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: hsl(185, 75%, 39%);
-    /*background: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-top.svg'), hsl(185, 75%, 39%);
+    background: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg'), hsl(185, 75%, 39%);
     background-repeat: no-repeat, no-repeat;
-    background-position: -760px -590px, 120px 310px;*/
+    background-position: top -37.75rem left -47.125rem, bottom -37.625rem right -46.75rem;
     line-height: 1.4;
     font-family: 'Kumbh Sans', sans-serif;
     color: hsl(0, 0%, 0%);
     font-size: 1rem;
 
-    /*@media screen and (min-width: 376px) {
-        background-position: -290px -540px, 694px 326px;
-    }*/
+    @media screen and (min-width: 376px) {
+        background-position: top -31.625rem left -17.875rem, bottom -39.5rem right -14.5rem;
+    }
 }
 
 .card {
@@ -29,33 +29,6 @@ body {
     text-align: center;
     background-color: hsl(0, 0%, 100%);
     box-shadow: 0 0 20px 2px hsla(229, 23%, 23%, 0.3);
-    position: relative;
-
-    &::before {
-        content: url('../images/bg-pattern-top.svg');
-        position: absolute;
-        z-index: -1;
-        top: -46.25rem;
-        left: -48.75rem;
-        
-        @media screen and (min-width: 376px) {
-            top: -43.125rem;
-            left: -51.75rem;
-        }
-    }
-
-    &::after {
-        content: url('../images/bg-pattern-bottom.svg');
-        position: absolute;
-        z-index: -1;
-        bottom: -43.125rem;
-        right: -49.375rem;
-
-        @media screen and (min-width: 376px) {
-            bottom: -50.625rem;
-            right: -48.625rem;
-        }
-    }
 
     @media screen and (min-width: 376px) {
         width: 21.875rem;
@@ -63,7 +36,8 @@ body {
 
     &__header {
         border-radius: 15px 15px 0 0;
-        background-image: url('../images/bg-pattern-card.svg');
+        background: url('../images/bg-pattern-card.svg');
+        background-repeat: no-repeat;
         background-color: hsl(0, 0%, 100%);
         height: 8.75rem;
         position: relative;
@@ -142,13 +116,4 @@ body {
 .flex--row {
     display: flex;
     justify-content: center;
-}
-
-.attribution {
-    margin-top: 1.25rem;
-    color: black;
-}
-
-.attribution a {
-    color: white;
 }

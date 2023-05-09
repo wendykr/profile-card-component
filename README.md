@@ -40,7 +40,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### What I learned
 
-I remembered the work with before:: & after:: pseudo elements for background, to position the absolute photo images element to the relative background images element.
+I remembered the work with multi background images and to position the absolute photo images element to the relative background images element.
 
 ## Author
 
