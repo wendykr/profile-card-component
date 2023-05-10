@@ -44,4 +44,4 @@ I remembered the work with multi background images and to position the absolute 
 
 ## Author
 
-- Frontend Mentor - [@ywendykr](https://www.frontendmentor.io/profile/wendykr)
+- Frontend Mentor - [@wendykr](https://www.frontendmentor.io/profile/wendykr)
